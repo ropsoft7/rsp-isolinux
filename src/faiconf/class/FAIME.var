@@ -1,0 +1,11 @@
+KEYMAP=us
+TIMEZONE=UTC
+locales="en_US"
+ROOTPW='$6$WPFiUKiL.Trif9TB$CPFiUR.Gqz/yDoI5hFN47p5mJfq3fG.eCpmBlxxZ9TyMlo/YpHFc.VyY7Yn3puCbYPJWMYHQdngxrw7./.RsM/'
+username=rsp
+USERPW='$6$Sb8jdWm784Xg/0/k$0yfWWtp.bif6DpH62Fq8YgAEHsY8/3uLuwW/aYYGDMM5saShBa.P1zmtk0dvJRwNae0FxphH/balARfNZOxUL1'
+release=trixie
+secsuite=trixie-security
+bpo=
+postinst=rspit
+rclocal=1

@@ -1,0 +1,43 @@
+#!/bin/bash
+
+# Ensure the script is run as the root user
+if [ "$USER" != "root" ]; then
+  echo "This script must be run as root."
+  exit 1
+fi
+
+cd ~;
+
+echo "Removing the default user @rsp";
+sleep 1;
+
+    sudo userdel rsp;
+    sudo rm -rf /home/rsp;
+    echo ~ok && sleep 3;
+
+echo "Reinstalling node.js & npm from 'n'"
+sleep 1;
+
+    sudo npm install -g n -y;
+    sudo n 18;
+    sudo apt remove nodejs npm -y;
+    echo ~ok && sleep 3
+
+
+echo "Downloading @RSp root project from git://github.com/ropsoft7/rsp.git";
+sleep 1;
+
+    git clone git://github.com/ropsoft7/rsp.git;
+    cd rsp;
+    echo ~ok && sleep 3;
+
+echo "Installing @RSp root project automatically...";
+echo "Press CONTROL + C in order to install it manually...";
+
+sleep 7;
+
+    npm install;
+    npm start;
+    echo ~ok && sleep 3;
+
+exit 0;

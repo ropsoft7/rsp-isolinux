@@ -1,0 +1,8 @@
+# These lines should work for many sites
+
+deb http://mirror.i3d.net/debian trixie main contrib non-free non-free-firmware
+deb http://mirror.netcologne.de/debian-security trixie-security main contrib non-free non-free-firmware
+#deb http://mirror.i3d.net/debian trixie-backports main contrib non-free
+
+# repository that may contain newer fai packages for trixie
+#deb http://fai-project.org/download trixie koeln

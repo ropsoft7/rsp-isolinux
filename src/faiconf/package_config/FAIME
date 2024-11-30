@@ -1,0 +1,4 @@
+PACKAGES install-norec
+curl git sudo nano npm nodejs net-tools
+PACKAGES install
+task-english
